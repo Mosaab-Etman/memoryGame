@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='device-width, initial-scale=1, shrink-to-fit=no'>
+        <title>Memory Game</title>
+        <link rel='stylesheet' href='Style.css'>
+    </head>
+    <body>
+        <div class='container'>
+            <!-- Header of the Game -->
+            <div class='overlayIntro'>
+                <div class='start'>
+                    <p class='warning'>* Please enter your name</p>
+                    <input id='name' type='text' placeholder="Type Your Name">
+                    <button id='start'>Start</button>
+                </div>
+            </div>
+            <div class='header'>
+                <span class='playerName'>Player Name:</span>
+                <span class='wrongTries'>Wrong Tries: <span>0</span></span>
+            </div>
+            <!-- Container of the Blocks -->
+            <div class='blocksContainer'>
+
+                <div class='block' data-charachter='brutus'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/brutus.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='brutus'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/brutus.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='groot'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/groot.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='groot'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/groot.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='leprechaun'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/leprechaun.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='leprechaun'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/leprechaun.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='mecky'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/mecky.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='mecky'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/mecky.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='ninjaHead'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/ninjaHead.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='ninjaHead'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/ninjaHead.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='ninjaTurtle'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/ninjaTurtle.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='ninjaTurtle'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/ninjaTurtle.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='sherlock'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/sherlock.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='sherlock'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/sherlock.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='simpson'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/simpson.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='simpson'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/simpson.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='walter'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/walter.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='walter'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/walter.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='woody'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/woody.png'>
+                    </div>
+                </div>
+                <div class='block' data-charachter='woody'>
+                    <div class='front'>
+                        <img src='Images/mark.png'>
+                    </div>
+                    <div class='back'>
+                        <img src='Images/woody.png'>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        <audio id ='soundStart' src='Sounds/Start.mp3' preload='auto'></audio> 
+        <audio id='error' src='Sounds/Error.mp3' preload='auto'></audio>
+        <audio id='success' src='Sounds/Success.mp3' preload='auto'></audio>
+        <script src='Main.js'></script>
+    </body>
+</html>

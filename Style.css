@@ -1,0 +1,166 @@
+@media (max-width: 772px) {
+    html {
+        font-size: 13px;
+    }
+}
+body {
+    height: 600px;
+    margin: 0;
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+}
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+/* styleing Overlay Intro page */
+.overlayIntro {
+    position: absolute;
+    z-index: 5;
+    left: 0; top: 0;
+    margin: 0;
+    width: 100%; height: 100%;
+    background-color: #373071bf;
+}
+
+.overlayIntro .start {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlayIntro .start .warning {
+    color: #080606;
+    font-weight: 600;
+    margin: 5px;
+    opacity: 0;
+}
+
+.overlayIntro .start input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    background-color: #f9f7f7a8;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    
+}
+
+.overlayIntro .start button {
+    display: block;
+    padding: 10px;
+    width: 40%;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #d02727;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+    
+}
+
+
+/* Styling the Header */
+
+.header {
+    padding: 10px;
+    color: white;
+    background-color: #3a39397d;
+    border: 2px solid #484848;
+    border-radius: 20px;
+    
+}
+
+.header .wrongTries {
+    display: block;
+    margin: 5px 0px;
+}
+
+.header .wrongTries span {color: red
+}
+
+
+/* Styling Blocks Container */
+
+.blocksContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blocksContainer .block {
+    position: relative;
+    width: 20%;
+    height: 7vw;
+    margin: 10px 0px;
+    transform-style: preserve-3d;
+    transition: all .5s ease;
+    cursor: pointer
+}
+
+
+.blocksContainer .block .front,
+.blocksContainer .block .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.blocksContainer .block .front {
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.blocksContainer .block .back {
+    transform: rotateY(180deg);
+}
+
+.blocksContainer .block .front img,
+.blocksContainer .block .back img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    border: 2px solid #383838;
+    border-radius: 10px;
+}
+
+.blocksContainer .block .back img {
+    background-color: white;
+}
+
+.blocksContainer .isFlipped,
+.blocksContainer .isMatched {
+    transform: rotateY(180deg);
+    
+}
+
+
+/* Animation */
+
+@keyframes fadingIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadingOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
