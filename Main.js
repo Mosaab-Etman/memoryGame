@@ -18,6 +18,12 @@ startBtn.addEventListener('click', function() {
         overlayPage.style.animation = 'fadingOut 1s';
         document.querySelector('#soundStart').play();
         
+        blocks.forEach(block => block.classList.add('isFlipped'))
+
+        setTimeout(() => {
+            blocks.forEach(block => block.classList.remove('isFlipped'))
+
+        }, 4000)
 
         setTimeout(() => {
             overlayPage.style.display = 'none'
@@ -122,6 +128,24 @@ function checkMatched(firstBlock, secondBlock) {
             wrongTries.innerHTML = parseInt(wrongTries.innerHTML) + 1; 
 
         }, 1000)
+    }
+
+    let matchedBlocks = blocks.filter(block => block.classList.contains('isMatched'))
+
+    if (matchedBlocks.length == 20) {
+
+        shuffle(orderArray);
+
+        blocks.forEach((block, index) => {
+
+            block.style.order = orderArray[index];
+
+        })
+
+        setTimeout(() => {
+            blocks.forEach(block => block.classList.remove('isMatched'))
+        }, 4000);
+
     }
 }
 
