@@ -110,18 +110,6 @@ function checkMatched(firstBlock, secondBlock) {
 
         document.querySelector('#success').play();
 
-        let matchedBlocks = blocks.filter(block => block.classList.contains('isMatched'));
-
-        if (matchedBlocks.length == 20) {
-
-            matchedBlocks.forEach(block => {
-
-                block.classList.remove('isMatched');
-
-                window.reload
-            })
-        }
-
     }   else {
 
         setTimeout(() => {
