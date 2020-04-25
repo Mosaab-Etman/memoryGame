@@ -38,6 +38,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+@media (max-width: 772px) {
+    .overlayIntro .start {
+        width: 60%;
+    }
+}
+
 .overlayIntro .start .warning {
     color: #080606;
     font-weight: 600;
@@ -68,10 +74,8 @@ body {
     background-color: #d02727;
     color: white;
     cursor: pointer;
-    margin: 10px auto;
-    
+    margin: 10px auto;   
 }
-
 
 /* Styling the Header */
 
@@ -89,9 +93,7 @@ body {
     margin: 5px 0px;
 }
 
-.header .wrongTries span {color: red
-}
-
+.header .wrongTries span {color: red}
 
 /* Styling Blocks Container */
 
