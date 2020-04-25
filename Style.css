@@ -1,6 +1,6 @@
 @media (max-width: 772px) {
     html {
-        font-size: 13px;
+        font-size: 10px;
     }
 }
 body {
@@ -12,6 +12,12 @@ body {
 .container {
     width: 50%;
     margin: auto;
+}
+
+@media (max-width: 772px) {
+    .container {
+        width: 80%;
+    }
 }
 
 /* styleing Overlay Intro page */
@@ -102,6 +108,12 @@ body {
     transform-style: preserve-3d;
     transition: all .5s ease;
     cursor: pointer
+}
+
+@media (max-width: 772px) {
+    .blocksContainer .block {
+        height: 12vw; 
+    }
 }
 
 
