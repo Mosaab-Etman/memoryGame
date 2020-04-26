@@ -153,6 +153,35 @@ body {
     transform: rotateY(180deg);
     
 }
+.success {
+    position: absolute;
+    z-index: 5;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: #612525c9;
+    display: none
+}
+
+.success p {
+    position: absolute;
+    left: 50%; top: 10%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    animation: coloring 2s infinite
+}
+
+.success .again {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px; width: 30%;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #d02727;
+    color: white;
+    cursor: pointer;
+}
 
 
 /* Animation */
@@ -177,4 +206,13 @@ body {
     100% {
         opacity: 0;
     }
+}
+
+@keyframes coloring {
+    0% {color: red}
+    20% {color: yellow}
+    40% {color: green}
+    60% {color: blue}
+    80% {color: orange}
+    100% {color: #7e04ec}
 }

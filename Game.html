@@ -7,15 +7,15 @@
         <link rel='stylesheet' href='Style.css'>
     </head>
     <body>
+        <div class='overlayIntro'>
+            <div class='start'>
+                <p class='warning'>* Please enter your name</p>
+                <input id='name' type='text' placeholder="Type Your Name">
+                <button id='start'>Start</button>
+            </div>
+        </div>
         <div class='container'>
             <!-- Header of the Game -->
-            <div class='overlayIntro'>
-                <div class='start'>
-                    <p class='warning'>* Please enter your name</p>
-                    <input id='name' type='text' placeholder="Type Your Name">
-                    <button id='start'>Start</button>
-                </div>
-            </div>
             <div class='header'>
                 <span class='playerName'>Player Name:</span>
                 <span class='wrongTries'>Wrong Tries: <span>0</span></span>
@@ -184,6 +184,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class='success'>
+            <p>You Made it</p>
+            <button class='again'>Play Again</button>
         </div>  
         
         <audio id ='soundStart' src='Sounds/Start.mp3' preload='auto'></audio> 

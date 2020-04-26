@@ -130,9 +130,28 @@ function checkMatched(firstBlock, secondBlock) {
         }, 1000)
     }
 
-    let matchedBlocks = blocks.filter(block => block.classList.contains('isMatched'))
+    // trigering success function
+    success();
+}
+
+// Success Function 
+
+function success() {
+    let matchedBlocks = blocks.filter(block => block.classList.contains('isMatched')),
+        newGame = document.querySelector('.again'),
+        congScreen = document.querySelector('.success');
 
     if (matchedBlocks.length == 20) {
+
+        congScreen.style.display = 'block'
+
+    }
+
+    // Start New Game 
+
+    newGame.onclick = function() {
+
+        congScreen.style.display = 'none';
 
         shuffle(orderArray);
 
@@ -145,9 +164,7 @@ function checkMatched(firstBlock, secondBlock) {
         setTimeout(() => {
             blocks.forEach(block => block.classList.remove('isMatched'))
         }, 4000);
-
     }
 }
-
 
 
